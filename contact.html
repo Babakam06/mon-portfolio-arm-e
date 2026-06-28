@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - Armée Française</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/contact.css">
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="accueil.html">ARMÉE FRANÇAISE</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="accueil.html">Accueil</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="terre.html">Armée de Terre</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="marine.html">Marine Nationale</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="air-espace.html">Armée de l'Air</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="gendarmerie.html">Gendarmerie</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="memorial.html">Mémorial</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="portfolio.html">Galerie</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section class="hero-section" style="height: 50vh;">
+    <img src="assets/img/hero-contact.jpg" alt="Contact" class="hero-bg">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1 class="hero-title" style="font-size: 3rem;">Contactez-nous</h1>
+      <p class="hero-subtitle">Nous sommes à votre écoute</p>
+    </div>
+  </section>
+
+  <section class="content-section content-section-light">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <h2 class="section-title fade-in">Formulaire de Contact</h2>
+
+          <div id="formConfirmation" style="display: none;"></div>
+
+          <form id="contactForm" class="fade-in">
+            <div class="row g-4">
+              <div class="col-md-6">
+                <label for="name" class="form-label" style="color: var(--kaki-dark); font-weight: 600;">Nom complet *</label>
+                <input type="text" class="form-control" id="name" name="name" required placeholder="Votre nom">
+              </div>
+              <div class="col-md-6">
+                <label for="email" class="form-label" style="color: var(--kaki-dark); font-weight: 600;">Email *</label>
+                <input type="email" class="form-control" id="email" name="email" required placeholder="votre.email@exemple.fr">
+              </div>
+              <div class="col-12">
+                <label for="phone" class="form-label" style="color: var(--kaki-dark); font-weight: 600;">Téléphone</label>
+                <input type="tel" class="form-control" id="phone" name="phone" placeholder="06 12 34 56 78">
+              </div>
+              <div class="col-12">
+                <label for="subject" class="form-label" style="color: var(--kaki-dark); font-weight: 600;">Sujet *</label>
+                <select class="form-select" id="subject" name="subject" required>
+                  <option value="">Choisissez un sujet...</option>
+                  <option value="renseignement">Demande de renseignements</option>
+                  <option value="recrutement">Recrutement</option>
+                  <option value="stage">Stage / Formation</option>
+                  <option value="partenariat">Partenariat</option>
+                  <option value="presse">Presse / Média</option>
+                  <option value="autre">Autre</option>
+                </select>
+              </div>
+              <div class="col-12">
+                <label for="message" class="form-label" style="color: var(--kaki-dark); font-weight: 600;">Message *</label>
+                <textarea class="form-control" id="message" name="message" rows="6" required placeholder="Votre message..."></textarea>
+              </div>
+              <div class="col-12">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="consent" required>
+                  <label class="form-check-label" for="consent" style="color: var(--steel-grey);">
+                    J'accepte que mes données soient utilisées pour traiter ma demande *
+                  </label>
+                </div>
+              </div>
+              <div class="col-12">
+                <button type="submit" class="btn btn-military w-100" style="padding: 1rem;">
+                  Envoyer le message
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="content-section content-section-dark">
+    <div class="container">
+      <h2 class="section-title fade-in" style="color: var(--coyote-tan);">Informations</h2>
+      <div class="row g-4">
+        <div class="col-md-4 fade-in text-center">
+          <div class="p-4">
+            <div class="mb-3">
+              <div style="width: 60px; height: 60px; background-color: var(--coyote-tan); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="var(--kaki-dark)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+              </div>
+            </div>
+            <h4 style="color: var(--coyote-tan); margin-bottom: 1rem;">Adresse</h4>
+            <p style="color: var(--beige-light);">
+              Ministère des Armées<br>
+              60 Boulevard du Général Martial Valin<br>
+              75015 Paris, France
+            </p>
+          </div>
+        </div>
+        <div class="col-md-4 fade-in text-center">
+          <div class="p-4">
+            <div class="mb-3">
+              <div style="width: 60px; height: 60px; background-color: var(--coyote-tan); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="var(--kaki-dark)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                </svg>
+              </div>
+            </div>
+            <h4 style="color: var(--coyote-tan); margin-bottom: 1rem;">Téléphone</h4>
+            <p style="color: var(--beige-light);">
+              Standard : 01 42 19 30 00<br>
+              Urgences : 17<br>
+              Du lundi au vendredi<br>
+              9h00 - 18h00
+            </p>
+          </div>
+        </div>
+        <div class="col-md-4 fade-in text-center">
+          <div class="p-4">
+            <div class="mb-3">
+              <div style="width: 60px; height: 60px; background-color: var(--coyote-tan); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="var(--kaki-dark)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+              </div>
+            </div>
+            <h4 style="color: var(--coyote-tan); margin-bottom: 1rem;">Email</h4>
+            <p style="color: var(--beige-light);">
+              contact@defense.gouv.fr<br>
+              recrutement@defense.gouv.fr<br>
+              presse@defense.gouv.fr
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="content-section content-section-tan">
+    <div class="container">
+      <h2 class="section-title fade-in">Centres d'Information et de Recrutement</h2>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-3 fade-in">
+          <div class="card card-military h-100">
+            <div class="card-body">
+              <h5 class="card-title">Armée de Terre</h5>
+              <p class="card-text">Centres d'Information et de Recrutement des Forces Armées (CIRFA) partout en France.</p>
+              <p style="color: var(--steel-grey); font-size: 0.9rem;">Numéro unique : 0800 22 22 18</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 fade-in">
+          <div class="card card-military h-100">
+            <div class="card-body">
+              <h5 class="card-title">Marine Nationale</h5>
+              <p class="card-text">Bureaux Marine dans les principales villes et ports de France.</p>
+              <p style="color: var(--steel-grey); font-size: 0.9rem;">Numéro unique : 0810 500 600</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 fade-in">
+          <div class="card card-military h-100">
+            <div class="card-body">
+              <h5 class="card-title">Armée de l'Air</h5>
+              <p class="card-text">Bureaux Air Recrutement près des bases aériennes.</p>
+              <p style="color: var(--steel-grey); font-size: 0.9rem;">Numéro unique : 0800 80 50 19</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 fade-in">
+          <div class="card card-military h-100">
+            <div class="card-body">
+              <h5 class="card-title">Gendarmerie</h5>
+              <p class="card-text">Centres d'Information et de Recrutement de la Gendarmerie (CIRG).</p>
+              <p style="color: var(--steel-grey); font-size: 0.9rem;">Numéro unique : 0820 220 221</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <h5>Armée Française</h5>
+          <p>Au service de la France et des Français depuis des siècles. Honneur, Patrie, Valeur, Discipline.</p>
+        </div>
+        <div class="col-md-4 mb-4">
+          <h5>Liens Rapides</h5>
+          <a href="terre.html">Armée de Terre</a>
+          <a href="marine.html">Marine Nationale</a>
+          <a href="air-espace.html">Armée de l'Air</a>
+          <a href="gendarmerie.html">Gendarmerie</a>
+        </div>
+        <div class="col-md-4 mb-4">
+          <h5>Contact</h5>
+          <a href="contact.html">Formulaire de contact</a>
+          <a href="memorial.html">Mémorial</a>
+          <a href="portfolio.html">Galerie photos</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Armée Française. Tous droits réservés. Projet SLAM</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
